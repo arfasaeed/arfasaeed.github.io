@@ -27,8 +27,8 @@ Personal developer portfolio for **Arfa Saeed**, a 3rd-semester Computer Science
 
 ## 🌐 Live Website
 
-The portfolio is deployed via GitHub Pages at:  
-👉 **[https://arfasaeed.github.io/arfasaeed/](https://arfasaeed.github.io/arfasaeed/)**
+The portfolio is deployed via GitHub Pages directly at:  
+👉 **[https://arfasaeed.github.io/](https://arfasaeed.github.io/)**
 
 ### Local Preview:
 Open `index.html` in any browser:
