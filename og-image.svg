@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M0,70 H1200 M0,140 H1200 M0,210 H1200 M0,280 H1200 M0,350 H1200 M0,420 H1200 M0,490 H1200 M0,560 H1200" />
+    <path d="M100,0 V630 M200,0 V630 M300,0 V630 M400,0 V630 M500,0 V630 M600,0 V630 M700,0 V630 M800,0 V630 M900,0 V630 M1000,0 V630 M1100,0 V630" />
+  </g>
+
+  <!-- Card Border -->
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="none" stroke="#334155" stroke-width="2" />
+
+  <!-- Badge / Monogram -->
+  <rect x="120" y="120" width="80" height="80" rx="20" fill="url(#accent)" />
+  <text x="160" y="165" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="34" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">AS</text>
+
+  <!-- Name -->
+  <text x="120" y="270" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="58" fill="#f8fafc" letter-spacing="-1">Arfa Saeed</text>
+
+  <!-- Subtitle -->
+  <text x="120" y="335" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="28" fill="#94a3b8">Computer Science Student &amp; Software Developer</text>
+
+  <!-- Highlights -->
+  <text x="120" y="420" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="22" fill="#cbd5e1">🏛️ FAST NUCES Multan (3rd Sem) • 🎒 Lahore Grammar School (LGS) Alumna</text>
+  <text x="120" y="465" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="22" fill="#818cf8">⚡ C++ • OOP • Python • Data Structures • Web Development</text>
+
+  <!-- URL -->
+  <text x="120" y="525" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="18" fill="#64748b">https://arfasaeed.github.io</text>
+</svg>
