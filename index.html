@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arfa Saeed | CS Student & Developer 🌸</title>
+  <title>Arfa Saeed | Computer Science Student</title>
   
-  <!-- Google Fonts -->
+  <!-- Inter & Plus Jakarta Sans Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,49 +17,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
-          colors: {
-            girly: {
-              50: '#fff5f7',
-              100: '#ffe4eb',
-              200: '#fecddb',
-              300: '#fea3be',
-              400: '#fc7099',
-              500: '#f43f73',
-              600: '#e11d56',
-              700: '#be1243',
-            },
-            lavender: {
-              50: '#faf7ff',
-              100: '#f3edff',
-              200: '#e9ddff',
-              300: '#d7c2ff',
-              400: '#bd99fe',
-              500: '#a16efc',
-            },
-            rosecream: '#fffafd',
-          },
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            display: ['"Outfit"', 'sans-serif'],
-            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
-          animation: {
-            'float': 'float 4s ease-in-out infinite',
-            'float-delayed': 'float 4s ease-in-out 2s infinite',
-            'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
-            'spin-slow': 'spin 12s linear infinite',
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-12px)' },
-            },
-            pulseSoft: {
-              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
-              '50%': { opacity: '0.7', transform: 'scale(1.05)' },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
             }
           }
         }
@@ -68,272 +43,131 @@
   </script>
 
   <style>
-    /* Glassmorphism helpers */
-    .glass-card {
-      background: rgba(255, 255, 255, 0.72);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(254, 205, 219, 0.6);
+    /* Clean custom styling */
+    body {
+      color: #0f172a;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
     }
-    .glass-card-hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .glass-card-hover:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 35px -10px rgba(244, 63, 115, 0.18);
-      border-color: rgba(244, 63, 115, 0.4);
-    }
-    .glass-nav {
-      background: rgba(255, 250, 253, 0.85);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(254, 205, 219, 0.5);
-    }
-    .pink-gradient-text {
-      background: linear-gradient(135deg, #f43f73 0%, #a16efc 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .girly-gradient-bg {
-      background: linear-gradient(135deg, #f43f73 0%, #fc7099 50%, #bd99fe 100%);
-    }
-    .soft-mesh {
-      background-color: #fff9fb;
+    .grid-pattern {
+      background-size: 32px 32px;
       background-image: 
-        radial-gradient(at 15% 20%, rgba(254, 163, 190, 0.35) 0px, transparent 50%),
-        radial-gradient(at 85% 15%, rgba(215, 194, 255, 0.35) 0px, transparent 50%),
-        radial-gradient(at 50% 50%, rgba(255, 228, 235, 0.4) 0px, transparent 50%),
-        radial-gradient(at 80% 80%, rgba(254, 205, 219, 0.35) 0px, transparent 50%),
-        radial-gradient(at 20% 85%, rgba(233, 221, 255, 0.35) 0px, transparent 50%);
-    }
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #fff5f7;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #fecddb;
-      border-radius: 9999px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #fea3be;
+        linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
     }
   </style>
 </head>
 
-<body class="soft-mesh text-slate-800 font-sans selection:bg-girly-200 selection:text-girly-700 min-h-screen relative overflow-x-hidden">
+<body class="selection:bg-slate-900 selection:text-white">
 
-  <!-- Ambient Decorative Glowing Orbs -->
-  <div class="fixed top-[-10%] left-[-10%] w-96 h-96 bg-girly-200/40 rounded-full blur-3xl pointer-events-none animate-pulse-soft -z-10"></div>
-  <div class="fixed top-[40%] right-[-5%] w-[450px] h-[450px] bg-lavender-200/40 rounded-full blur-3xl pointer-events-none animate-pulse-soft -z-10" style="animation-delay: 1.5s;"></div>
-  <div class="fixed bottom-[-10%] left-[20%] w-[500px] h-[500px] bg-girly-100/50 rounded-full blur-3xl pointer-events-none animate-pulse-soft -z-10" style="animation-delay: 2.5s;"></div>
-
-  <!-- ================= NAVBAR ================= -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <!-- Logo -->
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Logo / Name -->
       <a href="#hero" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-2xl girly-gradient-bg flex items-center justify-center text-white shadow-lg shadow-girly-400/30 group-hover:scale-105 transition-transform duration-300">
-          <span class="font-serif italic font-bold text-xl">A</span>
+        <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-sm tracking-tight group-hover:bg-brand-600 transition-colors">
+          AS
         </div>
-        <div class="flex flex-col">
-          <span class="font-display font-bold text-lg text-slate-800 tracking-tight flex items-center gap-1.5">
-            Arfa Saeed <span class="text-xs animate-bounce">🌸</span>
+        <div>
+          <span class="font-display font-bold text-slate-900 text-base tracking-tight block leading-tight">
+            Arfa Saeed
           </span>
-          <span class="text-[11px] font-medium text-girly-500 tracking-wide">FAST NUCES • 3rd Sem</span>
+          <span class="text-[11px] font-medium text-slate-500">CS @ FAST NUCES</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-girly-500 transition-colors">About</a>
-        <a href="#education" class="hover:text-girly-500 transition-colors">Education</a>
-        <a href="#skills" class="hover:text-girly-500 transition-colors">Skills</a>
-        <a href="#projects" class="hover:text-girly-500 transition-colors">Projects</a>
-        <a href="#journey" class="hover:text-girly-500 transition-colors">Journey</a>
-        <a href="#contact" class="px-5 py-2.5 rounded-full girly-gradient-bg text-white text-xs font-semibold shadow-md shadow-girly-500/25 hover:shadow-lg hover:shadow-girly-500/40 hover:scale-105 transition-all duration-300 flex items-center gap-2">
-          <span>Say Hello ✨</span>
-          <i class="fa-regular fa-paper-plane text-xs"></i>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+        <a href="#education" class="hover:text-slate-900 transition-colors">Education</a>
+        <a href="#skills" class="hover:text-slate-900 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-slate-900 transition-colors">Contact</a>
+        <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800 transition-colors flex items-center gap-2">
+          <i class="fa-brands fa-github text-sm"></i>
+          <span>GitHub</span>
         </a>
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-700 hover:text-girly-500 transition-colors">
-        <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden w-9 h-9 rounded-lg border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50">
+        <i class="fa-solid fa-bars text-sm" id="menuIcon"></i>
       </button>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobileMenu" class="md:hidden hidden px-6 pt-3 pb-6 glass-nav border-t border-girly-100/60 space-y-3">
-      <a href="#about" class="block py-2 text-sm font-medium text-slate-700 hover:text-girly-500">About Me</a>
-      <a href="#education" class="block py-2 text-sm font-medium text-slate-700 hover:text-girly-500">Education</a>
-      <a href="#skills" class="block py-2 text-sm font-medium text-slate-700 hover:text-girly-500">Skills</a>
-      <a href="#projects" class="block py-2 text-sm font-medium text-slate-700 hover:text-girly-500">Projects</a>
-      <a href="#journey" class="block py-2 text-sm font-medium text-slate-700 hover:text-girly-500">My Journey</a>
-      <a href="#contact" class="block text-center py-2.5 rounded-full girly-gradient-bg text-white text-xs font-semibold shadow-sm">
-        Say Hello ✨
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 py-4 bg-white border-b border-slate-200 space-y-3 text-sm font-medium text-slate-700">
+      <a href="#about" class="block py-1.5 hover:text-brand-600">About</a>
+      <a href="#education" class="block py-1.5 hover:text-brand-600">Education</a>
+      <a href="#skills" class="block py-1.5 hover:text-brand-600">Skills</a>
+      <a href="#projects" class="block py-1.5 hover:text-brand-600">Projects</a>
+      <a href="#contact" class="block py-1.5 hover:text-brand-600">Contact</a>
+      <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-900 text-white text-xs font-semibold">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub Profile</span>
       </a>
     </div>
   </header>
 
-  <main class="pt-24">
+  <main>
     <!-- ================= HERO SECTION ================= -->
-    <section id="hero" class="min-h-[92vh] flex items-center py-16 px-6 max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+    <section id="hero" class="relative py-20 lg:py-28 px-6 border-b border-slate-200 grid-pattern">
+      <div class="max-w-4xl mx-auto space-y-8 text-center sm:text-left">
         
-        <!-- Left: Intro Copy -->
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <!-- Cute Tag -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-girly-200 text-xs font-semibold text-girly-600 shadow-sm animate-float">
-            <span class="text-base">✨</span>
-            <span>Welcome to my cute corner of the internet!</span>
-            <span class="text-base">🌸</span>
-          </div>
-
-          <!-- Main Heading -->
-          <div class="space-y-2">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
-              Hi, I'm <span class="font-serif italic font-normal text-slate-700">Arfa</span>
-              <span class="pink-gradient-text block mt-1">Saeed</span>
-            </h1>
-            <p class="font-display font-medium text-lg sm:text-xl text-slate-600">
-              3rd Semester CS Student @ <span class="text-girly-600 font-semibold underline decoration-girly-200 underline-offset-4">FAST NUCES Multan</span>
-            </p>
-          </div>
-
-          <!-- Bio Description -->
-          <p class="text-slate-600 leading-relaxed text-base max-w-xl mx-auto lg:mx-0">
-            A passionate girl from Multan who fell in love with coding and turning logic into beautiful, intuitive software. Alum of <strong>Lahore Grammar School (LGS)</strong>, currently diving deep into Algorithms, Object-Oriented Design, and modern frontend creativity! 💖
-          </p>
-
-          <!-- Quick Badges -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-2">
-            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/80 border border-girly-200 text-slate-700 shadow-sm flex items-center gap-1.5">
-              <i class="fa-solid fa-graduation-cap text-girly-500"></i> FAST NUCES
-            </span>
-            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/80 border border-girly-200 text-slate-700 shadow-sm flex items-center gap-1.5">
-              <i class="fa-solid fa-school text-lavender-500"></i> LGS Alum
-            </span>
-            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/80 border border-girly-200 text-slate-700 shadow-sm flex items-center gap-1.5">
-              <i class="fa-solid fa-location-dot text-rose-500"></i> Multan, Pakistan
-            </span>
-            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/80 border border-girly-200 text-slate-700 shadow-sm flex items-center gap-1.5">
-              <i class="fa-solid fa-code text-girly-600"></i> 3rd Semester
-            </span>
-          </div>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-            <a href="#projects" class="px-7 py-3.5 rounded-2xl girly-gradient-bg text-white font-semibold text-sm shadow-lg shadow-girly-500/30 hover:shadow-xl hover:shadow-girly-500/40 hover:scale-105 transition-all duration-300 flex items-center gap-2">
-              <span>View My Projects</span>
-              <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
-            <a href="#contact" class="px-6 py-3.5 rounded-2xl glass-card font-semibold text-sm text-slate-700 hover:text-girly-600 hover:border-girly-300 hover:bg-white/90 shadow-sm transition-all duration-300 flex items-center gap-2">
-              <i class="fa-regular fa-envelope text-girly-500"></i>
-              <span>Get in Touch</span>
-            </a>
-          </div>
-
-          <!-- Social Links -->
-          <div class="flex items-center justify-center lg:justify-start gap-4 pt-3 text-slate-500">
-            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Find me online:</span>
-            <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center hover:text-girly-600 hover:border-girly-400 hover:scale-110 transition-all shadow-sm" title="GitHub">
-              <i class="fa-brands fa-github text-base"></i>
-            </a>
-            <a href="#contact" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center hover:text-girly-600 hover:border-girly-400 hover:scale-110 transition-all shadow-sm" title="Email">
-              <i class="fa-solid fa-envelope text-base"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center hover:text-girly-600 hover:border-girly-400 hover:scale-110 transition-all shadow-sm" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in text-base"></i>
-            </a>
-          </div>
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>FAST NUCES Multan • 3rd Semester CS Undergraduate</span>
         </div>
 
-        <!-- Right: Girly Visual Avatar Card -->
-        <div class="lg:col-span-5 flex justify-center">
-          <div class="relative w-full max-w-sm">
-            
-            <!-- Glow background -->
-            <div class="absolute inset-0 girly-gradient-bg rounded-3xl blur-2xl opacity-30 transform -rotate-3 scale-95"></div>
+        <!-- Headline & Bio -->
+        <div class="space-y-4">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight font-display leading-[1.1]">
+            Arfa Saeed
+          </h1>
+          <p class="text-xl sm:text-2xl font-semibold text-slate-700">
+            Computer Science Student & Aspiring Software Engineer
+          </p>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Passionate about programming, algorithmic problem-solving, and building clean, efficient software. 
+            Alumna of <strong>Lahore Grammar School (LGS)</strong>, currently pursuing a Bachelor’s in Computer Science at <strong>FAST-NUCES Multan</strong>.
+          </p>
+        </div>
 
-            <!-- Main Card -->
-            <div class="relative glass-card rounded-3xl p-6 sm:p-8 shadow-2xl border-white/80 space-y-6">
-              
-              <!-- Card Header -->
-              <div class="flex items-center justify-between border-b border-girly-100 pb-4">
-                <div class="flex items-center gap-2">
-                  <span class="w-3 h-3 rounded-full bg-girly-400"></span>
-                  <span class="w-3 h-3 rounded-full bg-lavender-400"></span>
-                  <span class="w-3 h-3 rounded-full bg-amber-300"></span>
-                </div>
-                <span class="text-xs font-mono font-medium text-girly-500 bg-girly-50 px-3 py-1 rounded-full border border-girly-200">
-                  arfa.dev 🌸
-                </span>
-              </div>
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3.5 pt-2">
+          <a href="#projects" class="px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors flex items-center gap-2 shadow-sm">
+            <span>View Projects</span>
+            <i class="fa-solid fa-arrow-down text-xs"></i>
+          </a>
+          <a href="#contact" class="px-5 py-2.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 text-sm font-semibold transition-colors flex items-center gap-2 shadow-sm">
+            <i class="fa-regular fa-envelope text-xs"></i>
+            <span>Contact Me</span>
+          </a>
+          <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 text-sm font-semibold transition-colors flex items-center gap-2 shadow-sm">
+            <i class="fa-brands fa-github text-sm"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
 
-              <!-- Girly Aesthetic Avatar / Illustration -->
-              <div class="relative mx-auto w-44 h-44 rounded-full p-2 girly-gradient-bg shadow-xl flex items-center justify-center group">
-                <div class="w-full h-full rounded-full bg-white flex flex-col items-center justify-center overflow-hidden relative shadow-inner">
-                  <!-- Cute Avatar Graphics -->
-                  <div class="w-24 h-24 rounded-full bg-girly-100 flex items-center justify-center text-girly-500 relative mb-1">
-                    <i class="fa-solid fa-laptop-code text-3xl text-girly-500"></i>
-                    <!-- Floating mini flower -->
-                    <span class="absolute -top-1 -right-1 text-xl animate-bounce">🎀</span>
-                  </div>
-                  <span class="font-serif italic font-bold text-xs text-girly-600">Arfa Saeed</span>
-                  <span class="text-[10px] text-slate-400">FASTian @ Multan</span>
-                </div>
-
-                <!-- Floating tech badges around avatar -->
-                <div class="absolute -top-3 -right-2 bg-white px-3 py-1.5 rounded-2xl shadow-lg border border-girly-200 flex items-center gap-1.5 text-xs font-bold text-girly-600 animate-float">
-                  <span>C++</span> ⚡
-                </div>
-                <div class="absolute -bottom-2 -left-3 bg-white px-3 py-1.5 rounded-2xl shadow-lg border border-lavender-200 flex items-center gap-1.5 text-xs font-bold text-lavender-600 animate-float-delayed">
-                  <span>Python</span> 🐍
-                </div>
-              </div>
-
-              <!-- Student Profile Pill Box -->
-              <div class="space-y-3 pt-2">
-                <div class="flex items-center justify-between p-3 rounded-2xl bg-white/70 border border-girly-100">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-xl bg-girly-100 flex items-center justify-center text-girly-600 text-xs">
-                      <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <div>
-                      <p class="text-[11px] text-slate-400 uppercase font-semibold">Degree</p>
-                      <p class="text-xs font-bold text-slate-800">BS Computer Science</p>
-                    </div>
-                  </div>
-                  <span class="text-xs font-bold text-girly-600 bg-girly-50 px-2.5 py-1 rounded-lg">3rd Sem</span>
-                </div>
-
-                <div class="flex items-center justify-between p-3 rounded-2xl bg-white/70 border border-girly-100">
-                  <div class="flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-xl bg-lavender-100 flex items-center justify-center text-lavender-600 text-xs">
-                      <i class="fa-solid fa-building-columns"></i>
-                    </div>
-                    <div>
-                      <p class="text-[11px] text-slate-400 uppercase font-semibold">Campus</p>
-                      <p class="text-xs font-bold text-slate-800">FAST NUCES, Multan</p>
-                    </div>
-                  </div>
-                  <span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Active
-                  </span>
-                </div>
-              </div>
-
-              <!-- Footer quote inside card -->
-              <div class="text-center pt-1 border-t border-girly-100/60">
-                <p class="text-xs italic text-slate-500 font-serif">
-                  "Turning coffee, pink notebooks & logic into code." ✨
-                </p>
-              </div>
-
-            </div>
+        <!-- Quick Summary Metrics -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-200">
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Institution</p>
+            <p class="text-sm font-bold text-slate-900 mt-1">FAST NUCES</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Standing</p>
+            <p class="text-sm font-bold text-slate-900 mt-1">3rd Semester</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Schooling</p>
+            <p class="text-sm font-bold text-slate-900 mt-1">LGS (A Levels)</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <p class="text-xs font-medium text-slate-500 uppercase tracking-wider">Location</p>
+            <p class="text-sm font-bold text-slate-900 mt-1">Multan, PK</p>
           </div>
         </div>
 
@@ -341,536 +175,239 @@
     </section>
 
     <!-- ================= ABOUT ME ================= -->
-    <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold tracking-widest text-girly-600 uppercase bg-girly-100/80 px-4 py-1.5 rounded-full border border-girly-200">
-          Get to Know Me 💖
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-          A girl with big dreams & <span class="pink-gradient-text">curious code</span>
-        </h2>
-        <p class="text-slate-600 text-sm sm:text-base">
-          From the classrooms of Lahore Grammar School to the computer labs of FAST NUCES Multan, here is my story so far.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <!-- Story text -->
-        <div class="lg:col-span-6 space-y-5">
-          <div class="glass-card rounded-3xl p-8 space-y-5 shadow-sm">
-            <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
-              <span>Hi, I'm Arfa!</span>
-              <span class="text-xl">👋🌸</span>
-            </h3>
-            <p class="text-slate-600 leading-relaxed text-sm">
-              I am a 3rd-semester undergraduate Computer Science student at <strong>FAST-NUCES Multan Campus</strong>. My journey started with a fascination for how software impacts everything in our lives, from communication to design.
-            </p>
-            <p class="text-slate-600 leading-relaxed text-sm">
-              Before stepping into university, I completed both my <strong>A Levels</strong> and <strong>Matriculation from Lahore Grammar School (LGS)</strong>, where I built a solid background in mathematics, logical reasoning, and creative problem solving.
-            </p>
-            <p class="text-slate-600 leading-relaxed text-sm">
-              Being a girl in tech, I love bringing an artistic, detailed, and human-centric touch to everything I build. Whether debugging a complex C++ program or designing a dreamy frontend in Tailwind CSS, I take pride in clean code and aesthetic presentation.
-            </p>
-
-            <div class="pt-2 flex flex-wrap gap-2">
-              <span class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-girly-50 text-girly-600 border border-girly-200">
-                #WomenInTech 👩‍💻
-              </span>
-              <span class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-lavender-50 text-lavender-600 border border-lavender-200">
-                #FASTian 🎓
-              </span>
-              <span class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-rose-50 text-rose-600 border border-rose-200">
-                #MultanPride 🏛️
-              </span>
-              <span class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-amber-50 text-amber-700 border border-amber-200">
-                #LGSAlumna 🎒
-              </span>
-            </div>
-          </div>
+    <section id="about" class="py-20 px-6 border-b border-slate-200 bg-slate-50/50">
+      <div class="max-w-4xl mx-auto space-y-10">
+        
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Background</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 font-display">About Me</h2>
         </div>
 
-        <!-- 4 Cute Highlight Cards -->
-        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <div class="glass-card glass-card-hover rounded-3xl p-6 space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-girly-100 flex items-center justify-center text-girly-500 text-xl shadow-sm">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h4 class="font-bold text-slate-800 text-base">Passionate Coder</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Fond of solving coding puzzles, understanding core data structures, and mastering object-oriented design in C++ & Python.
+          <div class="md:col-span-2 space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p>
+              I am an undergraduate Computer Science student at <strong>FAST-NUCES Multan Campus</strong>, currently in my 3rd semester. My interest in technology lies in understanding how complex software systems operate under the hood and writing clean, maintainable code.
+            </p>
+            <p>
+              Prior to university, I completed both my <strong>A Levels</strong> and <strong>Matriculation at Lahore Grammar School (LGS)</strong>, which gave me a rigorous foundation in mathematics, logical inquiry, and scientific discipline.
+            </p>
+            <p>
+              At FAST, I actively work on data structures, object-oriented software design in C++, and foundational web development. I focus on writing performant algorithms, writing clean modular code, and building accessible web applications.
             </p>
           </div>
 
-          <div class="glass-card glass-card-hover rounded-3xl p-6 space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-lavender-100 flex items-center justify-center text-lavender-500 text-xl shadow-sm">
-              <i class="fa-solid fa-palette"></i>
+          <!-- Quick facts panel -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4 text-sm">
+            <h3 class="font-bold text-slate-900 text-sm uppercase tracking-wider border-b border-slate-100 pb-2">
+              Key Details
+            </h3>
+            <div class="space-y-3 text-xs">
+              <div>
+                <span class="text-slate-400 block font-medium uppercase">Full Name</span>
+                <span class="font-semibold text-slate-800">Arfa Saeed</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block font-medium uppercase">Current Degree</span>
+                <span class="font-semibold text-slate-800">BS Computer Science</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block font-medium uppercase">University</span>
+                <span class="font-semibold text-slate-800">FAST NUCES, Multan Campus</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block font-medium uppercase">High School</span>
+                <span class="font-semibold text-slate-800">Lahore Grammar School (LGS)</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block font-medium uppercase">Residence</span>
+                <span class="font-semibold text-slate-800">Multan, Punjab, Pakistan</span>
+              </div>
             </div>
-            <h4 class="font-bold text-slate-800 text-base">Aesthetic UI/UX</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Believer in pretty, accessible, and intuitive digital interfaces with soft palettes and elegant typography.
-            </p>
-          </div>
-
-          <div class="glass-card glass-card-hover rounded-3xl p-6 space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-rose-100 flex items-center justify-center text-rose-500 text-xl shadow-sm">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <h4 class="font-bold text-slate-800 text-base">LGS Foundation</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Educated at Lahore Grammar School for both Matric & A Levels, fostering academic excellence and confidence.
-            </p>
-          </div>
-
-          <div class="glass-card glass-card-hover rounded-3xl p-6 space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 text-xl shadow-sm">
-              <i class="fa-solid fa-sparkles"></i>
-            </div>
-            <h4 class="font-bold text-slate-800 text-base">Continuous Growth</h4>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Currently in 3rd semester, constantly leveling up with new frameworks, git workflows, and university challenges.
-            </p>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- ================= EDUCATION TIMELINE ================= -->
-    <section id="education" class="py-20 px-6 max-w-5xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold tracking-widest text-lavender-500 uppercase bg-lavender-100/80 px-4 py-1.5 rounded-full border border-lavender-200">
-          Academic Milestones 📚
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-          My Educational <span class="pink-gradient-text">Journey</span>
-        </h2>
-        <p class="text-slate-600 text-sm">
-          A consistent track record of hard work and enthusiasm from school to university.
-        </p>
-      </div>
-
-      <!-- Timeline wrapper -->
-      <div class="relative border-l-2 border-girly-200 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-12">
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="py-20 px-6 border-b border-slate-200">
+      <div class="max-w-4xl mx-auto space-y-10">
         
-        <!-- Step 1: FAST NUCES -->
-        <div class="relative group">
-          <!-- Timeline icon node -->
-          <div class="absolute -left-[35px] sm:-left-[51px] top-1.5 w-10 h-10 rounded-2xl girly-gradient-bg text-white flex items-center justify-center shadow-md shadow-girly-400/40 group-hover:scale-110 transition-transform duration-300">
-            <i class="fa-solid fa-university text-sm"></i>
-          </div>
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Academic Background</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 font-display">Education</h2>
+        </div>
 
-          <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-8 space-y-3">
+        <div class="space-y-6">
+          
+          <!-- Card 1: FAST -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-bold px-3 py-1 rounded-full bg-girly-100 text-girly-600">
-                2024 — Present • 3rd Semester
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-800">
+                2024 — Present
               </span>
-              <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-girly-400"></i> Multan, Pakistan
-              </span>
+              <span class="text-xs font-medium text-slate-500">Multan, Pakistan</span>
             </div>
-
-            <h3 class="text-xl font-bold text-slate-800">
+            
+            <h3 class="text-xl font-bold text-slate-900">
               Bachelor of Science in Computer Science (BS CS)
             </h3>
-            <p class="text-sm font-semibold text-girly-600">
+            <p class="text-sm font-semibold text-slate-700">
               FAST National University of Computer and Emerging Sciences (NUCES), Multan Campus
             </p>
-
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
-              Currently in the 3rd semester, actively learning core computer science fundamentals. Embracing FAST's challenging curriculum known for rigorous software engineering foundations.
+            <p class="text-xs text-brand-600 font-semibold">
+              Currently in 3rd Semester
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed pt-1">
+              Enrolled in FAST's rigorous CS curriculum emphasizing foundational programming, software principles, and algorithmic design.
             </p>
 
-            <!-- Key courses -->
-            <div class="pt-2">
-              <p class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Key Highlights & Courses:</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="text-xs px-2.5 py-1 rounded-lg bg-white/90 border border-girly-200 text-slate-700">Programming Fundamentals</span>
-                <span class="text-xs px-2.5 py-1 rounded-lg bg-white/90 border border-girly-200 text-slate-700">Object Oriented Programming (OOP)</span>
-                <span class="text-xs px-2.5 py-1 rounded-lg bg-white/90 border border-girly-200 text-slate-700">Data Structures</span>
-                <span class="text-xs px-2.5 py-1 rounded-lg bg-white/90 border border-girly-200 text-slate-700">Discrete Mathematics</span>
-                <span class="text-xs px-2.5 py-1 rounded-lg bg-white/90 border border-girly-200 text-slate-700">Digital Logic Design</span>
+            <div class="pt-3">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Key Coursework:</p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-slate-700">Programming Fundamentals</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-slate-700">Object-Oriented Programming (OOP)</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-slate-700">Data Structures</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-slate-700">Discrete Mathematics</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-50 border border-slate-200 text-slate-700">Digital Logic Design</span>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Step 2: A Levels from LGS -->
-        <div class="relative group">
-          <div class="absolute -left-[35px] sm:-left-[51px] top-1.5 w-10 h-10 rounded-2xl bg-white border-2 border-lavender-400 text-lavender-500 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
-            <i class="fa-solid fa-graduation-cap text-sm"></i>
-          </div>
-
-          <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-8 space-y-3">
+          <!-- Card 2: A Levels (LGS) -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-bold px-3 py-1 rounded-full bg-lavender-100 text-lavender-600">
-                Cambridge A Levels
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-800">
+                Cambridge Assessment International Education
               </span>
-              <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
-                <i class="fa-solid fa-award text-lavender-400"></i> High Achievement
-              </span>
+              <span class="text-xs font-medium text-slate-500">Lahore Grammar School</span>
             </div>
 
-            <h3 class="text-xl font-bold text-slate-800">
-              General Certificate of Education (A Levels)
+            <h3 class="text-xl font-bold text-slate-900">
+              GCE Advanced Level (A Levels)
             </h3>
-            <p class="text-sm font-semibold text-lavender-600">
+            <p class="text-sm font-semibold text-slate-700">
               Lahore Grammar School (LGS)
             </p>
-
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
-              Studied A Levels with a focus on Mathematics and Sciences. Developed rigorous critical thinking, analytical reasoning, and independent study habits that paved the path for Computer Science.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Studied A Levels with concentrations in Mathematics and Pre-Engineering sciences, building analytical and critical thinking foundations.
             </p>
           </div>
-        </div>
 
-        <!-- Step 3: Matriculation from LGS -->
-        <div class="relative group">
-          <div class="absolute -left-[35px] sm:-left-[51px] top-1.5 w-10 h-10 rounded-2xl bg-white border-2 border-girly-300 text-girly-500 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
-            <i class="fa-solid fa-book-open text-sm"></i>
-          </div>
-
-          <div class="glass-card glass-card-hover rounded-3xl p-6 sm:p-8 space-y-3">
+          <!-- Card 3: Matriculation (LGS) -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-bold px-3 py-1 rounded-full bg-rose-100 text-rose-600">
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-800">
                 Secondary Education
               </span>
-              <span class="text-xs font-medium text-slate-500 flex items-center gap-1">
-                <i class="fa-solid fa-star text-amber-400"></i> Matriculation
-              </span>
+              <span class="text-xs font-medium text-slate-500">Lahore Grammar School</span>
             </div>
 
-            <h3 class="text-xl font-bold text-slate-800">
+            <h3 class="text-xl font-bold text-slate-900">
               Matriculation in Science
             </h3>
-            <p class="text-sm font-semibold text-rose-600">
+            <p class="text-sm font-semibold text-slate-700">
               Lahore Grammar School (LGS)
             </p>
-
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
-              Completed Matriculation from LGS with top grades in Science subjects, participating actively in school societies, debating, and science exhibitions.
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Completed secondary schooling with distinction in Science subjects, participating actively in academics and extracurriculars.
             </p>
           </div>
+
         </div>
 
       </div>
     </section>
 
-    <!-- ================= SKILLS SECTION ================= -->
-    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold tracking-widest text-girly-600 uppercase bg-girly-100/80 px-4 py-1.5 rounded-full border border-girly-200">
-          My Toolkit 🛠️✨
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-          Skills & <span class="pink-gradient-text">Technologies</span>
-        </h2>
-        <p class="text-slate-600 text-sm">
-          A blend of programming languages, tools, and theoretical principles I work with.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- ================= TECHNICAL SKILLS ================= -->
+    <section id="skills" class="py-20 px-6 border-b border-slate-200 bg-slate-50/50">
+      <div class="max-w-4xl mx-auto space-y-10">
         
-        <!-- Category 1: Languages -->
-        <div class="glass-card glass-card-hover rounded-3xl p-7 space-y-6">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-2xl bg-girly-100 text-girly-500 flex items-center justify-center text-xl shadow-sm">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg">Programming</h3>
-              <p class="text-xs text-slate-400 font-medium">Core Languages</p>
-            </div>
-          </div>
-
-          <div class="space-y-4">
-            <div>
-              <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1.5">
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-bolt text-girly-500"></i> C++ / OOP</span>
-                <span class="text-girly-600">85%</span>
-              </div>
-              <div class="w-full h-2 rounded-full bg-girly-100 overflow-hidden">
-                <div class="h-full girly-gradient-bg rounded-full" style="width: 85%;"></div>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1.5">
-                <span class="flex items-center gap-1.5"><i class="fa-brands fa-python text-lavender-500"></i> Python</span>
-                <span class="text-lavender-500">75%</span>
-              </div>
-              <div class="w-full h-2 rounded-full bg-lavender-100 overflow-hidden">
-                <div class="h-full bg-lavender-400 rounded-full" style="width: 75%;"></div>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1.5">
-                <span class="flex items-center gap-1.5"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5 & CSS3</span>
-                <span class="text-girly-600">90%</span>
-              </div>
-              <div class="w-full h-2 rounded-full bg-girly-100 overflow-hidden">
-                <div class="h-full girly-gradient-bg rounded-full" style="width: 90%;"></div>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1.5">
-                <span class="flex items-center gap-1.5"><i class="fa-brands fa-js text-amber-500"></i> JavaScript</span>
-                <span class="text-amber-600">65%</span>
-              </div>
-              <div class="w-full h-2 rounded-full bg-amber-100 overflow-hidden">
-                <div class="h-full bg-amber-400 rounded-full" style="width: 65%;"></div>
-              </div>
-            </div>
-          </div>
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Technical Proficiencies</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 font-display">Skills & Toolkit</h2>
         </div>
 
-        <!-- Category 2: Frameworks & Tools -->
-        <div class="glass-card glass-card-hover rounded-3xl p-7 space-y-6">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-2xl bg-lavender-100 text-lavender-500 flex items-center justify-center text-xl shadow-sm">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg">Web & Tools</h3>
-              <p class="text-xs text-slate-400 font-medium">Frameworks & Utilities</p>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-2.5">
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-wind text-teal-400"></i> Tailwind CSS
-            </span>
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-brands fa-git-alt text-orange-500"></i> Git VCS
-            </span>
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-brands fa-github text-slate-800"></i> GitHub & CLI
-            </span>
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-code text-blue-500"></i> VS Code
-            </span>
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-terminal text-girly-600"></i> PowerShell / Bash
-            </span>
-            <span class="px-3.5 py-2 rounded-2xl bg-white border border-girly-200 text-xs font-semibold text-slate-700 flex items-center gap-2 shadow-sm">
-              <i class="fa-solid fa-palette text-pink-500"></i> Responsive Design
-            </span>
-          </div>
-        </div>
-
-        <!-- Category 3: CS Core Concepts & Soft Skills -->
-        <div class="glass-card glass-card-hover rounded-3xl p-7 space-y-6">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-500 flex items-center justify-center text-xl shadow-sm">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg">CS Concepts</h3>
-              <p class="text-xs text-slate-400 font-medium">Academics & Strengths</p>
-            </div>
-          </div>
-
-          <div class="space-y-2.5">
-            <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white/60">
-              <span class="w-2 h-2 rounded-full bg-girly-500"></span>
-              <span class="text-xs font-medium text-slate-700">Object-Oriented Programming (OOP)</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white/60">
-              <span class="w-2 h-2 rounded-full bg-lavender-500"></span>
-              <span class="text-xs font-medium text-slate-700">Data Structures & Analysis (DSA)</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white/60">
-              <span class="w-2 h-2 rounded-full bg-rose-400"></span>
-              <span class="text-xs font-medium text-slate-700">Algorithm Problem Solving</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white/60">
-              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-              <span class="text-xs font-medium text-slate-700">Team Collaboration & Communication</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white/60">
-              <span class="w-2 h-2 rounded-full bg-teal-400"></span>
-              <span class="text-xs font-medium text-slate-700">Fast Learning & Academic Discipline</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= FEATURED PROJECTS ================= -->
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold tracking-widest text-girly-600 uppercase bg-girly-100/80 px-4 py-1.5 rounded-full border border-girly-200">
-          Curated Creations 💻🌸
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-          Projects I've <span class="pink-gradient-text">Crafted with Love</span>
-        </h2>
-        <p class="text-slate-600 text-sm">
-          A showcase of semester coursework, university projects, and personal web experiments.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project 1: FAST Academic Companion -->
-        <div class="glass-card glass-card-hover rounded-3xl overflow-hidden shadow-sm flex flex-col">
-          <div class="h-48 girly-gradient-bg p-6 flex flex-col justify-between text-white relative">
-            <div class="flex justify-between items-start">
-              <span class="text-xs font-bold uppercase tracking-wider bg-black/20 backdrop-blur-md px-3 py-1 rounded-full">
-                Semester Project
-              </span>
-              <span class="text-2xl">🎓</span>
-            </div>
-            <div>
-              <p class="text-xs opacity-90">FAST NUCES Coursework</p>
-              <h3 class="text-xl font-bold font-display">Campus Compass</h3>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <p class="text-xs text-slate-600 leading-relaxed">
-              A comprehensive student portal helper built with C++ and OOP principles. Handles student registrations, GPA calculators, course enrollments, and prerequisite verification.
-            </p>
-            <div class="space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">C++</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">OOP</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">File Handling</span>
-              </div>
-              <div class="pt-2 border-t border-girly-100/60 flex items-center justify-between text-xs">
-                <span class="text-slate-400 font-medium">Console Application</span>
-                <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="font-bold text-girly-600 hover:text-girly-700 flex items-center gap-1">
-                  <span>View Code</span> <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Girly Portfolio -->
-        <div class="glass-card glass-card-hover rounded-3xl overflow-hidden shadow-sm flex flex-col border-girly-300">
-          <div class="h-48 bg-gradient-to-br from-pink-400 via-rose-300 to-purple-400 p-6 flex flex-col justify-between text-white relative">
-            <div class="flex justify-between items-start">
-              <span class="text-xs font-bold uppercase tracking-wider bg-white/20 backdrop-blur-md px-3 py-1 rounded-full">
-                Featured 🌸
-              </span>
-              <span class="text-2xl">✨</span>
-            </div>
-            <div>
-              <p class="text-xs opacity-90">Web Development</p>
-              <h3 class="text-xl font-bold font-display">Girly Personal Portfolio</h3>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <p class="text-xs text-slate-600 leading-relaxed">
-              My aesthetic personal portfolio website designed with HTML5 and Tailwind CSS. Features glassmorphism, responsive navigation, pastel color palettes, and interactive sections.
-            </p>
-            <div class="space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">HTML5</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">Tailwind CSS</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-girly-50 text-girly-600 border border-girly-200">Responsive UI</span>
-              </div>
-              <div class="pt-2 border-t border-girly-100/60 flex items-center justify-between text-xs">
-                <span class="text-emerald-600 font-semibold flex items-center gap-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Live Now
-                </span>
-                <a href="#hero" class="font-bold text-girly-600 hover:text-girly-700 flex items-center gap-1">
-                  <span>Explore</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Algorithmic Blossom -->
-        <div class="glass-card glass-card-hover rounded-3xl overflow-hidden shadow-sm flex flex-col">
-          <div class="h-48 bg-gradient-to-br from-purple-400 via-indigo-300 to-pink-300 p-6 flex flex-col justify-between text-white relative">
-            <div class="flex justify-between items-start">
-              <span class="text-xs font-bold uppercase tracking-wider bg-black/20 backdrop-blur-md px-3 py-1 rounded-full">
-                DSA Practice
-              </span>
-              <span class="text-2xl">⚡</span>
-            </div>
-            <div>
-              <p class="text-xs opacity-90">Data Structures & Algo</p>
-              <h3 class="text-xl font-bold font-display">Algorithmic Blossom</h3>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Interactive visualization of fundamental sorting algorithms (Bubble, Merge, Quick Sort) using pastel-toned dynamic bar graphs to make DSA intuitive and visually pleasing.
-            </p>
-            <div class="space-y-4">
-              <div class="flex flex-wrap gap-1.5">
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-lavender-50 text-lavender-600 border border-lavender-200">Python</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-lavender-50 text-lavender-600 border border-lavender-200">DSA</span>
-                <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-lavender-50 text-lavender-600 border border-lavender-200">Data Viz</span>
-              </div>
-              <div class="pt-2 border-t border-girly-100/60 flex items-center justify-between text-xs">
-                <span class="text-slate-400 font-medium">Algorithm Study</span>
-                <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="font-bold text-girly-600 hover:text-girly-700 flex items-center gap-1">
-                  <span>View Code</span> <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= JOURNEY & FUN FACTS ================= -->
-    <section id="journey" class="py-20 px-6 max-w-6xl mx-auto">
-      <div class="glass-card rounded-3xl p-8 sm:p-12 shadow-sm border-girly-200/80 space-y-10">
-        
-        <div class="text-center max-w-2xl mx-auto space-y-3">
-          <span class="text-xs font-bold tracking-widest text-girly-600 uppercase bg-girly-100 px-3 py-1 rounded-full">
-            Behind The Code 🎀
-          </span>
-          <h2 class="text-3xl font-extrabold text-slate-900 font-display">
-            Life as a CS Girl in Multan 🌸
-          </h2>
-          <p class="text-slate-600 text-sm">
-            Beyond coding assignments and lab exams, here's what keeps me inspired!
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          <div class="p-6 rounded-2xl bg-white/70 border border-girly-100 space-y-2">
-            <span class="text-3xl">☕</span>
-            <h4 class="font-bold text-slate-800 text-sm">Chai & Code</h4>
-            <p class="text-xs text-slate-500">
-              Late night debugging sessions with warm chai and soft lo-fi beats.
-            </p>
+          <!-- Column 1 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-2.5 text-slate-900 font-bold text-base">
+              <i class="fa-solid fa-code text-brand-600"></i>
+              <span>Languages</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-center justify-between">
+                <span>C++ (Core & OOP)</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Advanced</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Python</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Intermediate</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>JavaScript</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Foundational</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>HTML5 / CSS3</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Proficient</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="p-6 rounded-2xl bg-white/70 border border-girly-100 space-y-2">
-            <span class="text-3xl">📚</span>
-            <h4 class="font-bold text-slate-800 text-sm">LGS Heritage</h4>
-            <p class="text-xs text-slate-500">
-              Proud alumna carrying the discipline and values learned at Lahore Grammar School.
-            </p>
+          <!-- Column 2 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-2.5 text-slate-900 font-bold text-base">
+              <i class="fa-solid fa-layer-group text-brand-600"></i>
+              <span>Tools & Frameworks</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-center justify-between">
+                <span>Tailwind CSS</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Proficient</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Git & GitHub CLI</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Active</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>VS Code</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Daily Driver</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>PowerShell / CLI</span>
+                <span class="text-xs font-mono font-medium text-slate-400">Intermediate</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="p-6 rounded-2xl bg-white/70 border border-girly-100 space-y-2">
-            <span class="text-3xl">🏛️</span>
-            <h4 class="font-bold text-slate-800 text-sm">City of Saints</h4>
-            <p class="text-xs text-slate-500">
-              Living and studying in the rich, historic, and vibrant city of Multan.
-            </p>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-white/70 border border-girly-100 space-y-2">
-            <span class="text-3xl">🚀</span>
-            <h4 class="font-bold text-slate-800 text-sm">Future Goals</h4>
-            <p class="text-xs text-slate-500">
-              Striving to become an innovative software engineer and inspire more girls into tech!
-            </p>
+          <!-- Column 3 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-2.5 text-slate-900 font-bold text-base">
+              <i class="fa-solid fa-brain text-brand-600"></i>
+              <span>Core CS Disciplines</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span>Object-Oriented Programming</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span>Data Structures & Analysis</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span>Algorithm Design</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span>Discrete Structures</span>
+              </li>
+            </ul>
           </div>
 
         </div>
@@ -878,118 +415,198 @@
       </div>
     </section>
 
-    <!-- ================= CONTACT SECTION ================= -->
-    <section id="contact" class="py-20 px-6 max-w-5xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold tracking-widest text-girly-600 uppercase bg-girly-100/80 px-4 py-1.5 rounded-full border border-girly-200">
-          Get in Touch 💌
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-display">
-          Let's Connect & <span class="pink-gradient-text">Chat!</span>
-        </h2>
-        <p class="text-slate-600 text-sm">
-          Have a question, an opportunity, or just want to say hi? My inbox is always open!
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="py-20 px-6 border-b border-slate-200">
+      <div class="max-w-4xl mx-auto space-y-10">
         
-        <!-- Contact Info Card -->
-        <div class="lg:col-span-5 glass-card rounded-3xl p-8 space-y-6 shadow-sm">
-          <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
-            <span>Contact Details</span> 🌸
-          </h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Feel free to reach out to me for academic discussions, collaborative tech projects, or community initiatives.
-          </p>
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Portfolio</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 font-display">Featured Projects</h2>
+        </div>
 
-          <div class="space-y-4 pt-2">
-            <div class="flex items-center gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-girly-100 text-girly-600 flex items-center justify-center text-sm">
-                <i class="fa-solid fa-user"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Project 1 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+                <span class="font-mono uppercase">Academic Project</span>
+                <span>C++ / OOP</span>
               </div>
-              <div>
-                <p class="text-[11px] text-slate-400 font-semibold uppercase">Name</p>
-                <p class="text-sm font-bold text-slate-800">Arfa Saeed</p>
-              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                Campus Compass — University Management System
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                A modular student portal simulation implemented in C++ applying object-oriented design principles, custom class hierarchies, file handling, and GPA computation logic.
+              </p>
             </div>
-
-            <div class="flex items-center gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-girly-100 text-girly-600 flex items-center justify-center text-sm">
-                <i class="fa-solid fa-graduation-cap"></i>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+              <div class="flex gap-2 text-xs">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">C++</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">OOP</span>
               </div>
-              <div>
-                <p class="text-[11px] text-slate-400 font-semibold uppercase">University</p>
-                <p class="text-sm font-bold text-slate-800">FAST NUCES, Multan</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-600 flex items-center justify-center text-sm">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div>
-                <p class="text-[11px] text-slate-400 font-semibold uppercase">Location</p>
-                <p class="text-sm font-bold text-slate-800">Multan, Punjab, Pakistan</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3.5">
-              <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-sm">
-                <i class="fa-brands fa-github"></i>
-              </div>
-              <div>
-                <p class="text-[11px] text-slate-400 font-semibold uppercase">GitHub Profile</p>
-                <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-girly-600 hover:underline">
-                  github.com/arfasaeed
-                </a>
-              </div>
+              <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-900 hover:text-brand-600 flex items-center gap-1">
+                <span>Repository</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
             </div>
           </div>
 
-          <div class="pt-4 border-t border-girly-100">
-            <div class="p-3.5 rounded-2xl bg-girly-50 border border-girly-200 text-center">
-              <p class="text-xs font-semibold text-girly-700">
-                ✨ Always excited to learn, build, and grow! ✨
+          <!-- Project 2 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+                <span class="font-mono uppercase">Web Application</span>
+                <span>HTML / Tailwind CSS</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                Personal Developer Portfolio
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                A clean, minimal, fully responsive portfolio website showcasing academic history, technical proficiencies, and contact information. Deployed automatically with GitHub Pages.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+              <div class="flex gap-2 text-xs">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">HTML5</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">Tailwind</span>
+              </div>
+              <a href="https://github.com/arfasaeed/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-900 hover:text-brand-600 flex items-center gap-1">
+                <span>Source</span>
+                <i class="fa-brands fa-github text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+                <span class="font-mono uppercase">Algorithm Practice</span>
+                <span>Python / DSA</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                Algorithm & Sorting Analysis Suite
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Comparative analysis tool implementing and benchmarking key sorting algorithms (Merge Sort, Quick Sort, Bubble Sort) across diverse dataset distributions.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+              <div class="flex gap-2 text-xs">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">Python</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">Algorithms</span>
+              </div>
+              <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-900 hover:text-brand-600 flex items-center gap-1">
+                <span>Repository</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-slate-300 transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+                <span class="font-mono uppercase">Coursework</span>
+                <span>Logic & Architecture</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                Digital Logic Circuit Simulator
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Simulations and truth-table verification modules for combinational logic circuits, adders, and multiplexers as part of Digital Logic Design coursework at FAST.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+              <div class="flex gap-2 text-xs">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">DLD</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-mono">Simulation</span>
+              </div>
+              <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-slate-900 hover:text-brand-600 flex items-center gap-1">
+                <span>View Details</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-20 px-6 bg-slate-50/50">
+      <div class="max-w-4xl mx-auto space-y-10">
+        
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Connect</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 font-display">Get In Touch</h2>
+          <p class="text-slate-600 text-sm">
+            Feel free to connect regarding academic collaborations, project ideas, or networking.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Contact Info -->
+          <div class="space-y-4">
+            <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">
+              <p class="text-xs font-medium text-slate-400 uppercase">GitHub</p>
+              <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-slate-900 hover:text-brand-600 block">
+                github.com/arfasaeed
+              </a>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">
+              <p class="text-xs font-medium text-slate-400 uppercase">Location</p>
+              <p class="text-sm font-semibold text-slate-900">
+                Multan, Punjab, Pakistan
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">
+              <p class="text-xs font-medium text-slate-400 uppercase">University</p>
+              <p class="text-sm font-semibold text-slate-900">
+                FAST NUCES Multan Campus
               </p>
             </div>
           </div>
-        </div>
 
-        <!-- Contact Form -->
-        <div class="lg:col-span-7 glass-card rounded-3xl p-8 shadow-sm">
-          <form id="contactForm" class="space-y-5">
-            <div>
-              <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                Your Name <span class="text-girly-500">*</span>
-              </label>
-              <input type="text" id="name" required placeholder="e.g. Ayesha Khan" class="w-full px-4 py-3 rounded-2xl bg-white/90 border border-girly-200 focus:border-girly-400 focus:ring-2 focus:ring-girly-200 outline-none text-sm transition-all">
-            </div>
+          <!-- Contact Form -->
+          <div class="md:col-span-2 p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="name" class="block text-xs font-semibold text-slate-700 uppercase mb-1">
+                  Name
+                </label>
+                <input type="text" id="name" required placeholder="Your Name" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:ring-1 focus:ring-slate-900 transition-colors">
+              </div>
 
-            <div>
-              <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                Your Email <span class="text-girly-500">*</span>
-              </label>
-              <input type="email" id="email" required placeholder="e.g. ayesha@example.com" class="w-full px-4 py-3 rounded-2xl bg-white/90 border border-girly-200 focus:border-girly-400 focus:ring-2 focus:ring-girly-200 outline-none text-sm transition-all">
-            </div>
+              <div>
+                <label for="email" class="block text-xs font-semibold text-slate-700 uppercase mb-1">
+                  Email
+                </label>
+                <input type="email" id="email" required placeholder="your.email@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:ring-1 focus:ring-slate-900 transition-colors">
+              </div>
 
-            <div>
-              <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                Your Message <span class="text-girly-500">*</span>
-              </label>
-              <textarea id="message" rows="4" required placeholder="Write a sweet message, feedback, or inquiry..." class="w-full px-4 py-3 rounded-2xl bg-white/90 border border-girly-200 focus:border-girly-400 focus:ring-2 focus:ring-girly-200 outline-none text-sm transition-all resize-none"></textarea>
-            </div>
+              <div>
+                <label for="message" class="block text-xs font-semibold text-slate-700 uppercase mb-1">
+                  Message
+                </label>
+                <textarea id="message" rows="4" required placeholder="Your message..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:ring-1 focus:ring-slate-900 transition-colors resize-none"></textarea>
+              </div>
 
-            <button type="submit" class="w-full py-3.5 rounded-2xl girly-gradient-bg text-white font-semibold text-sm shadow-md shadow-girly-500/25 hover:shadow-lg hover:shadow-girly-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2">
-              <span>Send Message With Sparkles</span>
-              <i class="fa-solid fa-sparkles text-xs"></i>
-            </button>
-          </form>
+              <button type="submit" class="px-6 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors">
+                Send Message
+              </button>
 
-          <!-- Success Alert Popup (Hidden by default) -->
-          <div id="formSuccessMessage" class="hidden mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium text-center">
-            🎉 Thank you so much! Your message has been received with love! 💖
+              <div id="formSuccess" class="hidden mt-3 p-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-medium">
+                Message received successfully!
+              </div>
+            </form>
           </div>
+
         </div>
 
       </div>
@@ -997,49 +614,28 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="border-t border-girly-200/60 bg-white/50 backdrop-blur-md py-10 px-6">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl girly-gradient-bg flex items-center justify-center text-white text-xs font-serif font-bold shadow-sm">
-          A
-        </div>
-        <div>
-          <p class="font-bold text-sm text-slate-800">Arfa Saeed 🌸</p>
-          <p class="text-[11px] text-slate-500">CS Student • FAST NUCES Multan</p>
-        </div>
-      </div>
-
-      <p class="text-xs text-slate-500">
-        Crafted with <span class="text-girly-500">💖</span>, code, & Tailwind CSS by <strong>Arfa Saeed</strong>.
-      </p>
-
-      <div class="flex items-center gap-3 text-slate-500">
-        <a href="#hero" class="w-8 h-8 rounded-lg glass-card flex items-center justify-center hover:text-girly-600 transition-colors" title="Back to top">
-          <i class="fa-solid fa-arrow-up text-xs"></i>
-        </a>
+  <footer class="border-t border-slate-200 py-8 px-6 bg-white text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <p>© 2026 Arfa Saeed • FAST NUCES Multan</p>
+      <div class="flex items-center gap-5">
+        <a href="#hero" class="hover:text-slate-900 transition-colors">Top</a>
+        <a href="https://github.com/arfasaeed" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <!-- ================= JAVASCRIPT INTERACTIONS ================= -->
+  <!-- ================= SCRIPT ================= -->
   <script>
-    // Mobile navigation toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const menuIcon = document.getElementById('menuIcon');
 
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
-      if (mobileMenu.classList.contains('hidden')) {
-        menuIcon.classList.remove('fa-xmark');
-        menuIcon.classList.add('fa-bars');
-      } else {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-xmark');
-      }
+      menuIcon.classList.toggle('fa-bars');
+      menuIcon.classList.toggle('fa-xmark');
     });
 
-    // Close mobile menu on link click
     document.querySelectorAll('#mobileMenu a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -1048,17 +644,14 @@
       });
     });
 
-    // Contact Form handling with simulated success
     const contactForm = document.getElementById('contactForm');
-    const formSuccessMessage = document.getElementById('formSuccessMessage');
+    const formSuccess = document.getElementById('formSuccess');
 
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      formSuccessMessage.classList.remove('hidden');
+      formSuccess.classList.remove('hidden');
       contactForm.reset();
-      setTimeout(() => {
-        formSuccessMessage.classList.add('hidden');
-      }, 5000);
+      setTimeout(() => formSuccess.classList.add('hidden'), 5000);
     });
   </script>
 </body>

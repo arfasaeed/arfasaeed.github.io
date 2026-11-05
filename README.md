@@ -1,47 +1,41 @@
-# Arfa Saeed — Personal Portfolio 🌸✨
+# Arfa Saeed — Developer Portfolio
 
-Welcome to my personal developer portfolio repository!
-
-I am **Arfa Saeed**, a 3rd-semester Computer Science undergraduate student at **FAST NUCES, Multan Campus**. I am passionate about programming, software engineering, and creating aesthetic, intuitive user interfaces.
+Personal developer portfolio for **Arfa Saeed**, a 3rd-semester Computer Science undergraduate student at **FAST NUCES, Multan Campus**.
 
 ---
 
-## 👩‍💻 About Me
+## 📌 Profile Summary
 
-* 🏛️ **University**: BS Computer Science (3rd Semester) at **FAST NUCES Multan Campus**
-* 🎒 **High School & College**:
+* **Degree**: BS Computer Science (3rd Semester)
+* **University**: FAST National University of Computer and Emerging Sciences (NUCES), Multan Campus
+* **Educational Background**:
   * **A Levels**: Lahore Grammar School (LGS)
   * **Matriculation**: Lahore Grammar School (LGS)
-* 📍 **Location**: Multan, Punjab, Pakistan
-* 💖 **Focus Areas**: Object-Oriented Programming (OOP in C++), Python, Data Structures & Algorithms, Responsive Web Design
+* **Location**: Multan, Punjab, Pakistan
+* **Core Competencies**: C++, Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), Python, Web Technologies (HTML5, Tailwind CSS), Git & Version Control
 
 ---
 
-## 🎨 Tech Stack & Design
+## 🛠️ Tech Stack & Design
 
-* **Markup**: HTML5 Semantic Structure
-* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-* **Aesthetic**: Soft Blush & Lavender glassmorphism, chic modern typography, floating animation effects
-* **Icons**: [Font Awesome](https://fontawesome.com/)
-* **Typography**: Plus Jakarta Sans & Outfit (Google Fonts)
+* **Frontend**: Semantic HTML5 & Modern [Tailwind CSS](https://tailwindcss.com/)
+* **Typography**: Inter & Plus Jakarta Sans
+* **Design Philosophy**: Minimalist, clean, high-contrast, accessible, and responsive
+* **Deployment**: Hosted on GitHub Pages
 
 ---
 
-## 🚀 Live Demo & How to Run
+## 🌐 Live Website
 
-### Run Locally:
-Simply open `index.html` in any modern web browser:
-```bash
-# On Windows PowerShell
+The portfolio is deployed via GitHub Pages at:  
+👉 **[https://arfasaeed.github.io/arfasaeed/](https://arfasaeed.github.io/arfasaeed/)**
+
+### Local Preview:
+Open `index.html` in any browser:
+```powershell
 Start-Process index.html
 ```
 
-### Host on GitHub Pages:
-1. Go to your repository **Settings** on GitHub.
-2. Navigate to **Pages** (under Code and automation).
-3. Under **Branch**, select `main` and root `/`, then click **Save**.
-4. Your website will be live at `https://arfasaeed.github.io/arfasaeed/`!
-
 ---
 
-*Made with 💖 and code by Arfa Saeed*
+© 2026 Arfa Saeed. All rights reserved.
